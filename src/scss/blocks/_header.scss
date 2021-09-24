@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    align-items: flex-end;
+    min-height: 113px;
+    &__logo {
+        width: 113px;
+        img {
+            width: 100%;
+        }
+    }
+}
