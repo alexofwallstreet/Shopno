@@ -1,4 +1,5 @@
 @import "base/variables";
+@import "base/mixins";
 
 /*
 font-family: 'Merriweather', serif;
@@ -22,3 +23,6 @@ font-family: 'Raleway', sans-serif;
 @import "blocks/header";
 @import "blocks/title";
 @import "blocks/about";
+@import "blocks/portfolio";
+@import "blocks/gallery";
+@import "blocks/team";
