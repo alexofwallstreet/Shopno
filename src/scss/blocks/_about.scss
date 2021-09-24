@@ -1,0 +1,47 @@
+.about {
+    padding-top: 120px;
+
+    &__info {
+        margin-top: 140px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    &__image {
+        flex: 0 0 50%;
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    &__text {
+        flex: 0 0 50%;
+        padding-left: 55px;
+        padding-top: 5px;
+    }
+
+    &__header {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        margin-bottom: 20px;
+        color: #646565;
+        &_small {
+            font-size: 17px;
+        }
+    }
+
+    &__paragraph {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 27px;
+        font-size: 16px;
+        color: #929393;
+        p {
+            margin-bottom: 34px;
+        }
+    }
+}

@@ -3,14 +3,14 @@
     background-color: $backgroundColor;
     color: $textColor;
     &__header {
+        margin-top: 193px;
         font-family: "Montserrat", sans-serif;
         font-size: 45px;
-        margin-top: 193px;
+        font-weight: 700;
+        text-transform: uppercase;
         letter-spacing: 2.35px;
         line-height: 55px;
         text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
         text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
         mark {
             font-family: "Montserrat", sans-serif;

@@ -1,8 +1,5 @@
 @import "base/variables";
 
-@import "blocks/promo";
-@import "blocks/header";
-
 /*
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
@@ -20,3 +17,8 @@ font-family: 'Raleway', sans-serif;
     max-width: $containerWidth;
     margin: 0 auto;
 }
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/title";
+@import "blocks/about";
