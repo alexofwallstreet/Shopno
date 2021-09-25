@@ -1,5 +1,6 @@
 .about {
-    @include sectionPadding;
+    padding-top: 120px;
+    padding-bottom: 166px;
     &__info {
         margin-top: 140px;
         display: flex;
