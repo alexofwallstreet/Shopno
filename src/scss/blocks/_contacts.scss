@@ -10,7 +10,7 @@
     }
 
     &__form {
-        flex: 0 0 613px;
+        flex: 0 1 613px;
         padding: 23px 30px 38px 30px;
         input {
             display: block;
@@ -60,11 +60,12 @@
     }
 
     &__info {
-        flex: 0 0 500px;
+        flex: 0 1 500px;
         font-family: "Raleway", sans-serif;
         font-size: 15px;
         color: #c0c6c9;
         line-height: 24px;
+        padding-bottom: 19px;
     }
 
     &__adress {
