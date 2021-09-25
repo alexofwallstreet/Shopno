@@ -1,0 +1,84 @@
+.contacts {
+    padding-top: 105px;
+    padding-bottom: 120px;
+    min-height: 690px;
+    background: #fafbfc url("../img/contacts_background.jpg") top center/cover no-repeat;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__form {
+        flex: 0 0 613px;
+        padding: 23px 30px 38px 30px;
+        input {
+            display: block;
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+            color: #c0c6c9;
+            padding: 0 5px;
+            width: 100%;
+            height: 57px;
+            background-color: rgba($color: #fff, $alpha: 0);
+            border: none;
+            border-bottom: 1px solid #6e7981;
+            &::placeholder {
+                color: #c0c6c9;
+            }
+        }
+        textarea {
+            display: block;
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+            color: #c0c6c9;
+            padding: 32px 5px;
+            width: 100%;
+            height: 135px;
+            background-color: rgba($color: #fff, $alpha: 0);
+            border: none;
+            resize: none;
+            border-bottom: 1px solid #6e7981;
+            &::placeholder {
+                color: #c0c6c9;
+            }
+        }
+        button {
+            margin-top: 38px;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+            width: 244px;
+            height: 53px;
+            background-color: #6eeee4;
+            border-radius: 2px;
+            cursor: pointer;
+            border: none;
+            color: #2e6b66;
+        }
+    }
+
+    &__info {
+        flex: 0 0 500px;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        color: #c0c6c9;
+        line-height: 24px;
+    }
+
+    &__adress {
+        padding: 31px 30px 19px 31px;
+    }
+
+    &__map {
+        margin: 0 auto;
+        background-color: #fff;
+        width: 91%;
+        height: 224px;
+    }
+}
+
+.bg-gray {
+    background-color: rgba($color: #021623, $alpha: 0.71);
+}
