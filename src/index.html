@@ -16,14 +16,13 @@
         rel="stylesheet">
 
     <!-- Maps -->
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-    <script src="js/script.min.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>"></script>
     <title>Shopno</title>
 </head>
 
 <body>
+    @@include('./sections/_popup.html')
     <main>
-
         @@include('./sections/_promo.html')
 
         @@include('./sections/_about.html')
@@ -37,6 +36,8 @@
         @@include('./sections/_footer.html')
 
     </main>
+
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
