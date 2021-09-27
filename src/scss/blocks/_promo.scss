@@ -5,11 +5,11 @@
     &__header {
         margin-top: 193px;
         font-family: "Montserrat", sans-serif;
-        font-size: 45px;
+        font-size: 30px;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 2.35px;
-        line-height: 55px;
+        letter-spacing: 2.1px;
+        line-height: 59px;
         text-align: center;
         text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
         mark {
@@ -19,10 +19,15 @@
             padding: 0 5px;
             color: $textColor;
         }
+
+        // 992px window width and more
+        @include lg {
+            font-size: 45px;
+        }
     }
 
     &__button {
-        margin-top: 140px;
+        margin-top: 35px;
         text-align: center;
         button {
             font-family: "Montserrat", sans-serif;
@@ -39,8 +44,14 @@
 
     &__image {
         display: flex;
-        justify-content: flex-end;
-        padding-right: 90px;
-        transform: translateY(-25px);
+        justify-content: center;
+
+        @include lg {
+            justify-content: flex-end;
+            padding-right: 90px;
+            font-size: 45px;
+            margin: 0;
+            transform: translateY(160px);
+        }
     }
 }

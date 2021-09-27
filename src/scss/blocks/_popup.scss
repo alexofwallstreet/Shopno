@@ -6,26 +6,32 @@
     top: 0;
     left: 0;
     z-index: 10;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    animation: animateOpacity 0.2s linear;
+    height: 100%;
     background-color: rgba($color: #000000, $alpha: 0.7);
     &__image {
         height: 80%;
         max-width: 80%;
+        background-color: #fff;
+        padding: 20px;
+        animation: animatePopup 0.3s ease-in-out;
 
         img {
             object-fit: cover;
             height: 100%;
+            width: 100%;
         }
     }
 
     &__close {
         position: absolute;
         top: 20px;
+        opacity: 0.4;
         cursor: pointer;
         right: 40px;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         svg path {
             fill: #ccc;
         }
@@ -33,5 +39,29 @@
 
     &__show {
         display: flex;
+    }
+}
+
+.scroll_off {
+    overflow: hidden;
+}
+
+@keyframes animatePopup {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animateOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
