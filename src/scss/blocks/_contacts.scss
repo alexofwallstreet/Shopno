@@ -59,6 +59,10 @@
             cursor: pointer;
             border: none;
             color: #2e6b66;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #fff;
+            }
         }
 
         @include containerMedia {
