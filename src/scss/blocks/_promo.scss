@@ -1,8 +1,11 @@
 .promo {
     min-height: 805px;
-    text-align: right;
+    text-align: center;
     background-color: $backgroundColor;
     color: $textColor;
+    @include lg {
+        text-align: right;
+    }
     &__header {
         margin-top: 193px;
         font-family: "Montserrat", sans-serif;
@@ -59,6 +62,7 @@
     &__image {
         display: inline-flex;
         justify-content: center;
+        margin-bottom: 40px;
 
         @include lg {
             justify-content: flex-end;
