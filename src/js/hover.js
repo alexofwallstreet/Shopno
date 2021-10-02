@@ -7,10 +7,6 @@ team.forEach(team_member => {
         hover.classList.add("team__hover-window-show");
     });
 
-    team_member.addEventListener("mousemove", () => {
-
-    });
-
     team_member.addEventListener("mouseleave", () => {
         hover.classList.remove("team__hover-window-show");
     });

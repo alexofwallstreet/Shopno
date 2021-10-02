@@ -3,6 +3,7 @@
     text-align: center;
     background-color: $backgroundColor;
     color: $textColor;
+    padding-bottom: 100px;
     @include lg {
         text-align: right;
     }
