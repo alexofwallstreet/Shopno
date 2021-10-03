@@ -1,3 +1,8 @@
 .portfolio {
-    padding-top: 117px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include lg {
+        padding-top: 117px;
+        padding-bottom: 128px;
+    }
 }

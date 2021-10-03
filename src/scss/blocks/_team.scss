@@ -1,19 +1,30 @@
 .team {
     background-color: #f9fbfb;
-    padding-top: 75px;
-    padding-bottom: 187px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include lg {
+        padding-top: 70px;
+        padding-bottom: 187px;
+    }
     &__list {
-        margin-top: 120px;
+        margin-top: 60px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @include lg {
+            margin-top: 116px;
+        }
         &-item {
             margin-bottom: 14px;
             margin-left: 7px;
             margin-right: 7px;
             flex: 0 0 300px;
-            height: 440px;
+            height: 340px;
             cursor: pointer;
+            @include lg {
+                flex: 0 0 300px;
+                height: 440px;
+            }
             @include containerMedia {
                 flex: 0 0 370px;
                 margin-left: 0px;
@@ -26,9 +37,12 @@
     }
 
     &__image {
+        width: 100%;
+        height: 100%;
         img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -36,11 +50,21 @@
         display: none;
         position: absolute;
         width: 300px;
-        height: 240px;
-        transform: translate(0%, 50%);
+        min-height: 180px;
+        transform: translate(0%, 31%);
         background-color: #6df6eb;
         padding: 42px 40px;
         animation: animateHover 0.5s ease;
+        @include lg {
+            width: 300px;
+            min-height: 220px;
+            transform: translate(0%, 70%);
+        }
+        @include containerMedia {
+            width: 335px;
+            transform: translate(5%, 65%);
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -51,10 +75,6 @@
             border-width: 0px 10px 20px 10px;
             height: 0px;
             width: 0px;
-        }
-        @include containerMedia {
-            width: 335px;
-            transform: translate(5%, 75%);
         }
 
         &-show {

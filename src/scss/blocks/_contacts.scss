@@ -1,8 +1,12 @@
 .contacts {
-    padding-top: 105px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     min-height: 690px;
     background: #fafbfc url("../img/contacts_background.jpg") top center/cover no-repeat;
+    @include lg {
+        padding-top: 105px;
+        padding-bottom: 120px;
+    }
     &__wrapper {
         @include containerMedia {
             display: flex;

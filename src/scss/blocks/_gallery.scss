@@ -1,17 +1,26 @@
 .gallery {
-    padding-bottom: 128px;
-    margin-top: 115px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    @include lg {
+        margin-top: 115px;
+    }
+    @include containerMedia {
+        justify-content: space-between;
+    }
     &__item {
-        width: 370px;
-        height: 356px;
+        width: 250px;
+        height: 250px;
         margin-bottom: 14px;
         margin-right: 7px;
         margin-left: 7px;
         &:hover {
             cursor: pointer;
+        }
+        @include lg {
+            width: 370px;
+            height: 360px;
         }
         @include containerMedia {
             margin-right: 0px;
@@ -27,9 +36,5 @@
         &:hover {
             transform: scale(0.95);
         }
-    }
-
-    @include containerMedia {
-        justify-content: space-between;
     }
 }

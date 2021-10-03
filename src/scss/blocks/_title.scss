@@ -1,20 +1,26 @@
 .title__header {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 26px;
     letter-spacing: 1px;
     text-align: center;
     color: $headerColor;
     text-transform: uppercase;
+    @include lg {
+        font-size: 38px;
+    }
 }
 
 .title__subheader {
     font-family: "Merriweather", serif;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     margin-top: 4px;
     color: $subheaderColor;
+    @include lg {
+        font-size: 18px;
+    }
 }
