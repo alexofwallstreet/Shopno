@@ -8,17 +8,30 @@
         padding-bottom: 120px;
     }
     &__wrapper {
-        @include containerMedia {
+        @include md {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
+        }
+        @include lg {
+            justify-content: space-between;
         }
     }
 
     &__form {
-        flex: 0 0 100%;
+        flex: 0 0 45%;
         padding: 23px 30px 38px 30px;
-        margin-bottom: 40px;
+        margin: 0 10px 40px 10px;
+
+        @include md {
+            margin-bottom: 0;
+        }
+
+        @include containerMedia {
+            flex: 0 0 613px;
+            margin: 0;
+        }
+
         input {
             display: block;
             font-family: "Raleway", sans-serif;
@@ -73,24 +86,21 @@
                 width: 244px;
             }
         }
-
-        @include containerMedia {
-            flex: 0 0 613px;
-            margin-bottom: 0;
-        }
     }
 
     &__info {
-        flex: 0 0 100%;
+        flex: 0 0 45%;
         font-family: "Raleway", sans-serif;
         font-size: 15px;
         color: #c0c6c9;
         line-height: 24px;
         padding-bottom: 19px;
         text-align: center;
+        margin: 0 10px 0 10px;
         @include containerMedia {
             text-align: left;
             flex: 0 0 500px;
+            margin: 0;
         }
     }
 

@@ -18,6 +18,10 @@
         &:hover {
             cursor: pointer;
         }
+        @include md {
+            width: 340px;
+            height: 340px;
+        }
         @include lg {
             width: 370px;
             height: 360px;

@@ -8,19 +8,29 @@
     z-index: 10;
     width: 100vw;
     animation: animateOpacity 0.2s linear;
-    height: 100%;
+    height: 100vh;
     background-color: rgba($color: #000000, $alpha: 0.7);
     &__image {
-        height: 80%;
-        max-width: 80%;
-        background-color: #fff;
-        padding: 20px;
+        max-height: 80vh;
+        max-width: 80vw;
         animation: animatePopup 0.3s ease-in-out;
 
         img {
             object-fit: cover;
             height: 100%;
             width: 100%;
+        }
+
+        @include sm {
+            width: 400px;
+        }
+
+        @include md {
+            width: 500px;
+        }
+
+        @include lg {
+            width: 600px;
         }
     }
 
