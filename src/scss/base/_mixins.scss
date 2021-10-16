@@ -41,7 +41,7 @@
 }
 
 @mixin containerMedia {
-    @media (min-width: #{$containerWidth}) {
+    @media (min-width: #{$containerWidth + 12}) {
         @content;
     }
 }

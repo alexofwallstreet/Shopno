@@ -2,12 +2,9 @@
 @@include("hover.js");
 
 
-document.querySelector(".form").addEventListener("submit", (e) => {
+const form = document.querySelector(".form");
+form.addEventListener("submit", (e) => {
     e.preventDefault();
-    document.querySelectorAll(".form__input")
-        .forEach(item => {
-            item.value = "";
-        });
-
+    form.reset();
     alert("Your message was send!");
 })
