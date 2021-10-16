@@ -326,7 +326,7 @@ html {
   width: 0px;
 }
 
-.team__hover-window-show {
+.team__hover-window_hover {
   display: block;
 }
 
@@ -632,7 +632,7 @@ html {
   fill: #ccc;
 }
 
-.popup__show {
+.popup_show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
