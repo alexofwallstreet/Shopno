@@ -1,19 +1,19 @@
 .about {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     background-color: #f8fafa;
     @include lg {
-        padding-top: 120px;
-        padding-bottom: 166px;
+        padding-top: 7.5rem;
+        padding-bottom: 10.375rem;
     }
     &__info {
-        margin-top: 60px;
+        margin-top: 3.75rem;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: flex-start;
         @include lg {
-            margin-top: 140px;
+            margin-top: 8.75rem;
         }
     }
 
@@ -43,7 +43,7 @@
     }
 
     &__text {
-        padding: 10px 20px 0 20px;
+        padding: 0.625rem 1.25rem 0 1.25rem;
         flex: 0 0 100%;
         margin-top: 40px;
         @include sm {
@@ -52,7 +52,7 @@
         }
         // 576px window width and more
         @include lg {
-            margin-top: 40px;
+            margin-top: 2.5rem;
             margin-top: 0;
             flex: 0 0 50%;
             padding: 5px 0 0 55px;
@@ -63,13 +63,13 @@
         font-family: "Merriweather", serif;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1.2px;
+        font-size: 1rem;
+        letter-spacing: 0.075em;
         margin-bottom: 20px;
         color: #646565;
         text-align: center;
         @include lg {
-            font-size: 20px;
+            font-size: 1.25rem;
             text-align: left;
         }
         @include containerMedia {
@@ -91,7 +91,7 @@
             margin-bottom: 34px;
         }
         @include lg {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 }

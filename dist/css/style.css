@@ -6,6 +6,7 @@ font-family: 'Raleway', sans-serif;
 
 html {
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 * {
@@ -31,11 +32,11 @@ html {
 .promo__header {
   margin-top: 100px;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2.1px;
-  line-height: 59px;
+  letter-spacing: 1px;
+  line-height: 3.6rem;
   text-align: center;
   text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
 }
@@ -125,7 +126,7 @@ html {
 .title__header {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.625rem;
   letter-spacing: 1px;
   text-align: center;
   color: #323333;
@@ -144,13 +145,13 @@ html {
 }
 
 .about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
   background-color: #f8fafa;
 }
 
 .about__info {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +179,7 @@ html {
 }
 
 .about__text {
-  padding: 10px 20px 0 20px;
+  padding: 0.625rem 1.25rem 0 1.25rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -189,8 +190,8 @@ html {
   font-family: "Merriweather", serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
-  letter-spacing: 1.2px;
+  font-size: 1rem;
+  letter-spacing: 0.075em;
   margin-bottom: 20px;
   color: #646565;
   text-align: center;
@@ -261,8 +262,8 @@ html {
 
 .team {
   background-color: #f9fbfb;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
 .team__list {
@@ -333,20 +334,20 @@ html {
 .team__hover-name {
   font-family: "Merriweather", serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .team__hover-name span {
   font-weight: 400;
   font-style: italic;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .team__hover-text {
   margin-top: 25px;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5em;
 }
 
 .team__hover-social {
@@ -387,8 +388,8 @@ html {
 }
 
 .contacts {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
   min-height: 690px;
   background: #fafbfc url("../img/contacts_background.jpg") top center/cover no-repeat;
 }
@@ -404,7 +405,7 @@ html {
 .contacts__form input {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   color: #c0c6c9;
   padding: 0 5px;
   width: 100%;
@@ -439,9 +440,9 @@ html {
   display: block;
   font-family: "Raleway", sans-serif;
   outline: none;
-  font-size: 15px;
+  font-size: 1rem;
   color: #c0c6c9;
-  padding: 32px 5px;
+  padding: 2em 5px;
   width: 100%;
   height: 135px;
   background-color: rgba(255, 255, 255, 0);
@@ -474,7 +475,7 @@ html {
   margin-top: 38px;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 1.125rem;
   letter-spacing: 2px;
   width: 100%;
   height: 53px;
@@ -534,7 +535,7 @@ html {
 
 .footer__header {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #dfe0e0;
   margin-bottom: 18px;
 }
@@ -715,7 +716,7 @@ html {
 
 @media (min-width: 768px) {
   .promo__header {
-    font-size: 30px;
+    font-size: 2rem;
   }
 
   .title__header {
@@ -774,7 +775,7 @@ html {
 
   .promo__header {
     margin-top: 193px;
-    font-size: 45px;
+    font-size: 2.9rem;
   }
 
   .promo__button a {
@@ -800,12 +801,12 @@ html {
   }
 
   .about {
-    padding-top: 120px;
-    padding-bottom: 166px;
+    padding-top: 7.5rem;
+    padding-bottom: 10.375rem;
   }
 
   .about__info {
-    margin-top: 140px;
+    margin-top: 8.75rem;
   }
 
   .about__image {
@@ -813,7 +814,7 @@ html {
   }
 
   .about__text {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     margin-top: 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -822,12 +823,12 @@ html {
   }
 
   .about__header {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: left;
   }
 
   .about__paragraph {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .portfolio {
@@ -869,8 +870,8 @@ html {
   }
 
   .contacts {
-    padding-top: 105px;
-    padding-bottom: 120px;
+    padding-top: 6.6rem;
+    padding-bottom: 7.5rem;
   }
 
   .contacts__wrapper {

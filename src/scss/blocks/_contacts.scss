@@ -1,11 +1,11 @@
 .contacts {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     min-height: 690px;
     background: #fafbfc url("../img/contacts_background.jpg") top center/cover no-repeat;
     @include lg {
-        padding-top: 105px;
-        padding-bottom: 120px;
+        padding-top: 6.6rem;
+        padding-bottom: 7.5rem;
     }
     &__wrapper {
         @include md {
@@ -35,7 +35,7 @@
         input {
             display: block;
             font-family: "Raleway", sans-serif;
-            font-size: 15px;
+            font-size: 1rem;
             color: #c0c6c9;
             padding: 0 5px;
             width: 100%;
@@ -52,9 +52,9 @@
             display: block;
             font-family: "Raleway", sans-serif;
             outline: none;
-            font-size: 15px;
+            font-size: 1rem;
             color: #c0c6c9;
-            padding: 32px 5px;
+            padding: 2em 5px;
             width: 100%;
             height: 135px;
             background-color: rgba($color: #fff, $alpha: 0);
@@ -69,7 +69,7 @@
             margin-top: 38px;
             font-family: "Montserrat", sans-serif;
             text-transform: uppercase;
-            font-size: 18px;
+            font-size: 1.125rem;
             letter-spacing: 2px;
             width: 100%;
             height: 53px;

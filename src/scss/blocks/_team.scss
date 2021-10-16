@@ -1,7 +1,7 @@
 .team {
     background-color: #f9fbfb;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     @include lg {
         padding-top: 70px;
         padding-bottom: 187px;
@@ -85,19 +85,19 @@
     &__hover-name {
         font-family: "Merriweather", serif;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25rem;
         span {
             font-weight: 400;
             font-style: italic;
-            font-size: 15px;
+            font-size: 1rem;
         }
     }
 
     &__hover-text {
         margin-top: 25px;
         font-family: "Raleway", sans-serif;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5em;
     }
 
     &__hover-social {
