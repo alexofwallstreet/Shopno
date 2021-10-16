@@ -232,8 +232,10 @@ html {
 }
 
 .gallery__item {
-  width: 250px;
-  height: 250px;
+  min-width: 240px;
+  min-height: 240px;
+  max-width: 250px;
+  max-height: 250px;
   margin-bottom: 14px;
   margin-right: 7px;
   margin-left: 7px;
@@ -279,6 +281,7 @@ html {
 }
 
 .team__list-item {
+  position: relative;
   margin-bottom: 14px;
   margin-left: 7px;
   margin-right: 7px;
@@ -302,17 +305,13 @@ html {
 }
 
 .team__hover-window {
-  display: none;
+  visibility: hidden;
   position: absolute;
-  width: 300px;
+  bottom: 0px;
+  width: 100%;
   min-height: 180px;
-  -webkit-transform: translate(0%, 31%);
-      -ms-transform: translate(0%, 31%);
-          transform: translate(0%, 31%);
   background-color: #6df6eb;
-  padding: 42px 40px;
-  -webkit-animation: animateHover 0.5s ease;
-          animation: animateHover 0.5s ease;
+  padding: 32px 20px;
 }
 
 .team__hover-window::before {
@@ -328,7 +327,10 @@ html {
 }
 
 .team__hover-window_hover {
-  display: block;
+  -webkit-animation: animateHover 0.2s ease-in;
+          animation: animateHover 0.2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .team__hover-name {
@@ -369,20 +371,24 @@ html {
 
 @-webkit-keyframes animateHover {
   from {
+    visibility: hidden;
     opacity: 0;
   }
 
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
 
 @keyframes animateHover {
   from {
+    visibility: hidden;
     opacity: 0;
   }
 
   to {
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -704,8 +710,8 @@ html {
 
   .about__text {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
     margin-top: 40px;
   }
 
@@ -738,8 +744,10 @@ html {
   }
 
   .gallery__item {
-    width: 340px;
-    height: 340px;
+    min-width: 280px;
+    min-height: 280px;
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .contacts__wrapper {
@@ -841,8 +849,10 @@ html {
   }
 
   .gallery__item {
-    width: 370px;
-    height: 360px;
+    min-width: 370px;
+    min-height: 360px;
+    max-width: 370px;
+    max-height: 360px;
   }
 
   .team {
@@ -862,11 +872,8 @@ html {
   }
 
   .team__hover-window {
-    width: 300px;
     min-height: 220px;
-    -webkit-transform: translate(0%, 70%);
-        -ms-transform: translate(0%, 70%);
-            transform: translate(0%, 70%);
+    padding: 38px 40px;
   }
 
   .contacts {
@@ -920,10 +927,9 @@ html {
   }
 
   .team__hover-window {
+    bottom: 13px;
+    left: 15px;
     width: 335px;
-    -webkit-transform: translate(5%, 65%);
-        -ms-transform: translate(5%, 65%);
-            transform: translate(5%, 65%);
   }
 
   .contacts__form {
