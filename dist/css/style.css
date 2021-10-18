@@ -1,8 +1,6 @@
-/*
-font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif; 
-*/
+:root {
+  --base-font-size: 1rem;
+}
 
 html {
   scroll-behavior: smooth;
@@ -408,10 +406,11 @@ html {
   margin: 0 10px 40px 10px;
 }
 
-.contacts__form input {
+.contacts__form input,
+.contacts__form textarea {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
+  font-size: var(--base-font-size);
   color: #c0c6c9;
   padding: 0 5px;
   width: 100%;
@@ -422,59 +421,31 @@ html {
   outline: none;
 }
 
-.contacts__form input::-webkit-input-placeholder {
+.contacts__form input::-webkit-input-placeholder, .contacts__form textarea::-webkit-input-placeholder {
   color: #c0c6c9;
 }
 
-.contacts__form input::-moz-placeholder {
+.contacts__form input::-moz-placeholder, .contacts__form textarea::-moz-placeholder {
   color: #c0c6c9;
 }
 
-.contacts__form input:-ms-input-placeholder {
+.contacts__form input:-ms-input-placeholder, .contacts__form textarea:-ms-input-placeholder {
   color: #c0c6c9;
 }
 
-.contacts__form input::-ms-input-placeholder {
+.contacts__form input::-ms-input-placeholder, .contacts__form textarea::-ms-input-placeholder {
   color: #c0c6c9;
 }
 
-.contacts__form input::placeholder {
+.contacts__form input::placeholder,
+.contacts__form textarea::placeholder {
   color: #c0c6c9;
 }
 
 .contacts__form textarea {
-  display: block;
-  font-family: "Raleway", sans-serif;
-  outline: none;
-  font-size: 1rem;
-  color: #c0c6c9;
   padding: 2em 5px;
-  width: 100%;
   height: 135px;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
   resize: none;
-  border-bottom: 1px solid #6e7981;
-}
-
-.contacts__form textarea::-webkit-input-placeholder {
-  color: #c0c6c9;
-}
-
-.contacts__form textarea::-moz-placeholder {
-  color: #c0c6c9;
-}
-
-.contacts__form textarea:-ms-input-placeholder {
-  color: #c0c6c9;
-}
-
-.contacts__form textarea::-ms-input-placeholder {
-  color: #c0c6c9;
-}
-
-.contacts__form textarea::placeholder {
-  color: #c0c6c9;
 }
 
 .contacts__form button {
@@ -698,10 +669,6 @@ html {
 }
 
 @media (min-width: 576px) {
-  .container {
-    padding: 0 20px;
-  }
-
   .about__image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 350px;

@@ -32,10 +32,11 @@
             margin: 0;
         }
 
-        input {
+        input,
+        textarea {
             display: block;
             font-family: "Raleway", sans-serif;
-            font-size: 1rem;
+            font-size: var(--base-font-size);
             color: #c0c6c9;
             padding: 0 5px;
             width: 100%;
@@ -49,21 +50,9 @@
             }
         }
         textarea {
-            display: block;
-            font-family: "Raleway", sans-serif;
-            outline: none;
-            font-size: 1rem;
-            color: #c0c6c9;
             padding: 2em 5px;
-            width: 100%;
             height: 135px;
-            background-color: rgba($color: #fff, $alpha: 0);
-            border: none;
             resize: none;
-            border-bottom: 1px solid #6e7981;
-            &::placeholder {
-                color: #c0c6c9;
-            }
         }
         button {
             margin-top: 38px;

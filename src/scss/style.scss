@@ -3,11 +3,9 @@
 @import "base/media";
 @import "base/mixins";
 
-/*
-font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif; 
-*/
+:root {
+    --base-font-size: 1rem;
+}
 
 html {
     scroll-behavior: smooth;
@@ -23,18 +21,11 @@ html {
 
 .container {
     padding: 0 20px;
-
-    // 576px window width and more
-    @include sm {
-        padding: 0 20px;
-    }
-    // 992px window width and more
     @include lg {
         max-width: $containerWidth;
         padding: 0 20px;
         margin: 0 auto;
     }
-    //1138px and more
     @include containerMedia {
         padding: 0;
     }
