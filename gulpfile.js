@@ -39,7 +39,8 @@ const { src, dest } = require('gulp'),
     image = require('gulp-image'),
     webp = require('gulp-webp'),
     webphtml = require('gulp-webp-html'),
-    webpcss = require('gulp-webp-css');
+    webpcss = require('gulp-webp-css'),
+    deploy = require('gulp-gh-pages');
 
 
 function browserSync() {
@@ -91,7 +92,7 @@ function css() {
 function js() {
     return src(path.src.js)
         .pipe(fileinclude())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(
             rename({
                 extname: ".min.js"
@@ -125,6 +126,14 @@ function watchFiles() {
 function clean() {
     return del(path.clean);
 }
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+        .pipe(deploy())
+});
 
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, img));

@@ -3,17 +3,18 @@
     text-align: center;
     background-color: $backgroundColor;
     color: $textColor;
+    padding-bottom: 100px;
     @include lg {
         text-align: right;
     }
     &__header {
-        margin-top: 193px;
+        margin-top: 100px;
         font-family: "Montserrat", sans-serif;
-        font-size: 30px;
+        font-size: 1.25rem;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 2.1px;
-        line-height: 59px;
+        letter-spacing: 1px;
+        line-height: 3.6rem;
         text-align: center;
         text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
         mark {
@@ -24,9 +25,13 @@
             color: $textColor;
         }
 
-        // 992px window width and more
+        @include md {
+            font-size: 2rem;
+        }
+
         @include lg {
-            font-size: 45px;
+            margin-top: 193px;
+            font-size: 2.9rem;
         }
     }
 
@@ -37,7 +42,7 @@
         justify-content: center;
         align-items: center;
         a {
-            font-size: 18px;
+            font-size: 14px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,6 +60,10 @@
             &:hover {
                 background-color: $markColor;
             }
+
+            @include lg {
+                font-size: 18px;
+            }
         }
     }
 
@@ -62,8 +71,10 @@
         display: inline-flex;
         justify-content: center;
         margin-bottom: 40px;
+        margin-top: 30px;
 
         @include lg {
+            margin-top: 0px;
             justify-content: flex-end;
             padding-right: 90px;
             font-size: 45px;
